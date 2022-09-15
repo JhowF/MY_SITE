@@ -1,0 +1,220 @@
+html body{
+    margin:0;
+    padding:0;
+    box-sizing:borde-box;
+    background-color:black;
+    }
+    #div1{
+      display:grid;
+      grid-template-areas:
+      "header header header header"
+      "foto foto foto aside"
+       "main main main aside"
+        "footer footer footer footer";
+    }
+    
+    
+    /*Here i can work with my header */
+    header{
+      
+      display:grid;
+      grid-area:header; 
+      width:auto;
+      background: linear-gradient(to top, #666,  black );
+      
+      
+    }
+
+    #div_imagem_perfil{
+        grid-area: foto;
+        background: #666;
+        height:auto;
+        
+    }
+    #imagem_perfil{
+        height:280px;
+        border-radius: 160px;
+    }
+
+    #P_imagem{
+        text-align: center;
+    }
+
+    #nav1{
+        display:grid;
+        grid-template-rows:auto auto;
+     
+    }
+    #name{
+   
+      text-align:center;
+      font-size:30px;
+      color:orange;
+    }
+    
+    #nav1 ul{
+      display:flex;
+      justify-content:space-evenly;
+    }
+    #nav1 ul li{
+      display:inline-flex;
+      list-style-type:none;
+      
+    }
+    #nav1 ul li a{
+      display:flex-box;
+      height:20px;
+      text-decoration:none;
+      color:white;
+      font-size:16px;
+      transition-property:font-size, color;
+      transition-duration:0.5s;
+       
+    }
+    #nav1 ul li a:hover{
+      font-size:14px;
+      color:orange;
+    }
+    
+    
+    /*In this part i start work with my main*/
+    
+    
+    main{
+      display:grid;
+      grid-area:main;
+      background-color:#666;
+    }
+    #projetos{
+      padding-top:80px;
+    }
+    .topico{
+      margin-top:30px;
+      text-align:center;
+      
+    }
+    main p{
+      padding:20px;
+      font-size:23px;
+      text-align:justify;
+    }
+    h3{
+      padding:5px;
+      padding-left:10px;
+      background-color:orange;
+      width:110px;
+      border-radius:20px;
+      
+    }
+
+    .imagem_projetos{
+        display:inline-block;
+        height: 500px;
+        width:700px;
+        margin: 70px;
+        
+        
+    }
+    
+    
+    /*Working with my aside */
+    
+    
+    aside{
+      grid-area:aside;
+      background-color:#666;
+      width:auto;
+      height: auto;
+      margin:0;
+      padding:0;
+      
+    }
+    aside{
+        display:grid;
+        grid-template-rows: 60px 700PX 60px ;
+        
+    }
+    #certificações{
+        grid-row: 1/1 ;
+    }
+
+    #Projeto_java_pub{
+        grid-row: 3/3 ;
+    }
+
+    aside ol{
+        grid-row: 2/2 ;
+    }
+    aside ol li{
+      
+      padding-top:30px;
+      padding-right:10px;
+    }
+    
+    .link_certificados {
+      
+      text-decoration:none;
+      color:white;
+      transition-property:font-size, color;
+      transition-duration:0.9s;
+      
+      
+    }
+    .link_certificados:hover{
+      font-size:14px;
+      color:orange;
+      
+    }
+
+    #links{
+        grid-row: 4/4 ;
+    }
+    
+   
+    
+ 
+    
+    
+    
+    /*And for finish, working with my footer*/
+    
+    footer{
+      grid-area:footer;
+      background-color:#333;
+      height:auto;
+    }
+    
+    #copy_footer{
+      
+      display:block;
+      float:right;
+      text-align:right;
+      padding-right:10px;
+      
+    }
+    
+    .img{
+      
+      height:30px;
+    }
+    #footer_nav{
+      display:inline-flex;
+      list-style-type:none;
+      padding:0;
+      align-items:baseline;
+    }
+    
+    .contato{
+      display:flex-box;
+      text-decoration:none;
+      color:white;
+      padding:10px;
+    }
+    #footer_nav li a{
+      transition-property:font-size;
+      transition-duration:0.6s;
+      
+    }
+    #footer_nav li a:hover{
+      font-size:19px;
+    }
