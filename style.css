@@ -8,19 +8,22 @@ html body{
       display:grid;
       grid-template-areas:
       "header header header header"
-      "foto foto foto aside"
-       "main main main aside"
+      "foto foto foto foto "
+       "main main main main"
         "footer footer footer footer";
     }
     
     
     /*Here i can work with my header */
+    /*HEADER*/
     header{
+      
       
       display:grid;
       grid-area:header; 
-      width:auto;
+      
       background: linear-gradient(to top, #666,  black );
+
       
       
     }
@@ -41,8 +44,12 @@ html body{
     }
 
     #nav1{
+        margin-top: 50px;
+        position: fixed;
+        width:100vmax;
         display:grid;
         grid-template-rows:auto auto;
+        
      
     }
     #name{
@@ -62,8 +69,8 @@ html body{
       
     }
     #nav1 ul li a{
-      display:flex-box;
-      height:20px;
+      display:inline-block;
+      height:40px;
       text-decoration:none;
       color:white;
       font-size:16px;
@@ -78,15 +85,17 @@ html body{
     
     
     /*In this part i start work with my main*/
+    /*MAIN*/
     
     
     main{
+      
       display:grid;
       grid-area:main;
       background-color:#666;
     }
     #projetos{
-      padding-top:80px;
+      padding-top:180px;
     }
     .topico{
       margin-top:30px;
@@ -97,6 +106,7 @@ html body{
       padding:20px;
       font-size:23px;
       text-align:justify;
+      
     }
     h3{
       padding:5px;
@@ -105,35 +115,50 @@ html body{
       width:110px;
       border-radius:20px;
       
+      
     }
 
     .imagem_projetos{
         display:inline-block;
         height: 500px;
-        width:700px;
-        margin: 70px;
+        width:500px;
+        padding: 10px;
+        
         
         
     }
-    
-    
-    /*Working with my aside */
-    
-    
-    aside{
-      grid-area:aside;
-      background-color:#666;
-      width:auto;
-      height: auto;
-      margin:0;
-      padding:0;
+
+    .alinhando_agenda{
+      display: flex;
+      justify-content: center;
       
     }
-    aside{
-        display:grid;
-        grid-template-rows: 60px 700PX 60px ;
-        
+    hr{
+      margin-top: 180px;
     }
+    
+
+
+
+
+
+    
+    /*Working with my aside */
+    /*ASIDE*/
+    
+    #true_aside{
+    display: block;
+    float: right;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+   }
+
+   #aside{
+    float: right;
+    
+   }
+    
     #certificações{
         grid-row: 1/1 ;
     }
@@ -142,10 +167,10 @@ html body{
         grid-row: 3/3 ;
     }
 
-    aside ol{
+    #aside ol{
         grid-row: 2/2 ;
     }
-    aside ol li{
+    #aside ol li{
       
       padding-top:30px;
       padding-right:10px;
@@ -157,11 +182,10 @@ html body{
       color:white;
       transition-property:font-size, color;
       transition-duration:0.9s;
-      
-      
+        
     }
     .link_certificados:hover{
-      font-size:14px;
+      font-size:15.5px;
       color:orange;
       
     }
@@ -177,7 +201,7 @@ html body{
     
     
     /*And for finish, working with my footer*/
-    
+    /*FOOTER*/
     footer{
       grid-area:footer;
       background-color:#333;
