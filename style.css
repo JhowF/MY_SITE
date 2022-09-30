@@ -70,17 +70,16 @@ html body{
     }
     #nav1 ul li a{
       display:inline-block;
-      font-size:12px;
+      font-size:10px;
       height:40px;
       text-decoration:none;
       color:white;
-      font-size:16px;
       transition-property:font-size, color;
       transition-duration:0.5s;
        
     }
     #nav1 ul li a:hover{
-      font-size:12.5px;
+      font-size:10.2px;
       color:orange;
     }
     
